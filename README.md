@@ -13,3 +13,7 @@
 ### Desktop view
 
 ![Desktop view](./src/assets/images/desktop.png)
+
+#### :skull_and_crossbones: Disclaimer:bangbang:
+
+Details of the places displayed are not correct.
