@@ -11,16 +11,16 @@ const Card = ({
   googleMapsUrl,
 }) => {
   return (
-    <li className="flex flex-col">
-      <div className="w-full mb-4 rounded-lg">
+    <li className="flex flex-col sm:flex-row sm:gap-8 items-center justify-center sm:shadow-lg sm:max-w-[740px] rounded-lg py-3">
+      <div className="w-full mb-4 sm:w-[128px] h-[175px] sm:ml-5 ">
         {/* image container */}
         <img
           src={imageUrl}
           alt={title}
-          className="object-cover object-center w-full  h-44 rounded-lg"
+          className="object-cover object-center w-full h-full  rounded-lg"
         />
       </div>
-      <div>
+      <div className="sm:max-w-sm sm:h-[170px]">
         <div>
           <p className="flex items-center text-sm">
             <img src={pin} alt="Globe" className="w-3 h-4 inline-block mr-1" />
@@ -32,14 +32,16 @@ const Card = ({
               </a>
             </span>
           </p>
-          <h1 className="text-3xl font-bold py-2 mb-3">{title}</h1>
+          <h1 className="text-3xl sm:text-2xl font-bold py-2 sm:py-1 mb-1">
+            {title}
+          </h1>
         </div>
         <div>
           {/* card content */}
           <p className="text-sm font-bold">
             {startDate} - {endDate}
           </p>
-          <p className="py-3 text-sm">{description}</p>
+          <p className="py-2 text-sm">{description}</p>
         </div>
       </div>
     </li>
